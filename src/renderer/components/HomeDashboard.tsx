@@ -27,8 +27,8 @@ import type {
   ModelOption,
   ProjectRecord,
   RuntimeStatus,
-  type GameEngine,
-  type ProductionMode,
+  GameEngine,
+  ProductionMode,
 } from '../../shared/contracts';
 import { formatRelative, PROJECT_STATUS_LABELS } from '../ui';
 import { ModelPicker } from './ModelPicker';

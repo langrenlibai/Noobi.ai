@@ -31,7 +31,6 @@ import type {
   NoobiCrewMember,
   NoobiPackId,
   PipelineStage,
-  ProductionMode,
   ProjectIcon,
   ProjectRecord,
   ProjectStatus,
@@ -884,7 +883,7 @@ function validateSettings(value: unknown): AppSettings {
   const defaultNoobiStageMode = value.defaultNoobiStageMode === undefined
     ? DEFAULT_NOOBI_STAGE_MODE
     : value.defaultNoobiStageMode;
-  const productionMode: ProductionMode = value.productionMode === undefined
+  const productionMode = value.productionMode === undefined
     ? 'prototype'
     : value.productionMode;
   if (productionMode !== 'prototype' && productionMode !== 'delivery') {
